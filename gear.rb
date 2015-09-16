@@ -11,4 +11,9 @@ class Gear
     chainring / cog.to_f
   end
 
+  def gear_inches
+    # tire goes around rim twice for diameter
+    ratio * (rim + (tire * 2))
+  end
+
 end
